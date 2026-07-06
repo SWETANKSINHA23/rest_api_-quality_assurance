@@ -1,0 +1,19 @@
+{
+  "name": "rest_api_-quality_assurance",
+  "version": "1.0.0",
+  "description": "A comprehensive REST API quality assurance suite built with Postman and Newman, featuring CRUD operations, negative testing, request chaining, and automated CI/CD via GitHub Actions.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["api-testing", "postman", "newman", "qa", "rest-api"],
+  "author": "Swetank Sinha",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SWETANKSINHA23/rest_api_-quality_assurance"
+  },
+  "devDependencies": {
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
