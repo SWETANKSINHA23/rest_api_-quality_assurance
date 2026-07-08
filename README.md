@@ -28,3 +28,22 @@ The API under test is [JSONPlaceholder](https://jsonplaceholder.typicode.com) - 
 | PUT    | /users/1    | Full update, checks updated name in response   | 200             |
 | PATCH  | /users/1    | Partial update, checks updated job in response | 200             |
 | DELETE | /users/1    | Deletes user, checks response is empty         | 200             |
+
+---
+
+## Key things I have covered
+
+- Status code validation on every single request
+- Response body validation - checking fields exist and have the right values
+- Negative testing - what happens when you request something that does not exist
+- Request chaining - the POST request saves the created user's ID into an environment variable so it can be reused in follow-up requests
+- Auto-generated HTML test report after every run
+
+---
+
+## Tech Stack
+
+- Postman - for writing and designing the test cases
+- Newman - to run the Postman collection from the command line
+- newman-reporter-htmlextra - generates a clean HTML report
+- GitHub Actions - automates the whole test run on every push
