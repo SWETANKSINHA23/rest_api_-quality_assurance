@@ -47,3 +47,18 @@ The API under test is [JSONPlaceholder](https://jsonplaceholder.typicode.com) - 
 - Newman - to run the Postman collection from the command line
 - newman-reporter-htmlextra - generates a clean HTML report
 - GitHub Actions - automates the whole test run on every push
+
+---
+
+## How to run it locally
+
+Make sure you have Node.js 20+ installed, then:
+
+```bash
+git clone https://github.com/SWETANKSINHA23/rest_api_-quality_assurance
+cd rest_api_-quality_assurance
+npm install
+npx newman run collections/api-tests.postman_collection.json --reporters cli,htmlextra --reporter-htmlextra-export reports/report.html
+```
+
+After the run, open `reports/report.html` in your browser to see the full test report with pass/fail counts, response times, and assertion details.
