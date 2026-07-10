@@ -62,3 +62,11 @@ npx newman run collections/api-tests.postman_collection.json --reporters cli,htm
 ```
 
 After the run, open `reports/report.html` in your browser to see the full test report with pass/fail counts, response times, and assertion details.
+
+---
+
+## CI/CD
+
+Every push and pull request automatically triggers the test suite via GitHub Actions. The workflow installs dependencies, runs Newman, and uploads the HTML report as a downloadable artifact. You can check the results under the Actions tab in the repository.
+
+Workflow config: `.github/workflows/api-tests.yml`
