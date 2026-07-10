@@ -70,3 +70,18 @@ After the run, open `reports/report.html` in your browser to see the full test r
 Every push and pull request automatically triggers the test suite via GitHub Actions. The workflow installs dependencies, runs Newman, and uploads the HTML report as a downloadable artifact. You can check the results under the Actions tab in the repository.
 
 Workflow config: `.github/workflows/api-tests.yml`
+
+---
+
+## Project Structure
+
+```text
+rest_api_-quality_assurance/
+├── collections/
+│   └── api-tests.postman_collection.json   # all test cases
+├── .github/
+│   └── workflows/
+│       └── api-tests.yml                   # CI/CD pipeline
+├── package.json
+└── README.md
+```
