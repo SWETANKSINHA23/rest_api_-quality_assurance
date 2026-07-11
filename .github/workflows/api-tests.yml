@@ -27,3 +27,4 @@ jobs:
         with:
           name: newman-report
           path: reports/report.html
+          retention-days: 7
